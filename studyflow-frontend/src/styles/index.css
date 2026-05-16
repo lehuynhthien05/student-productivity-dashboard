@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #60a5fa;
+  --primary-light: #93c5fd;
+  --secondary: #22d3ee;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --info: #38bdf8;
+  --bg-light: #0b1120;
+  --bg-light2: #111827;
+  --bg-white: #0f172a;
+  --surface-1: rgba(15, 23, 42, 0.88);
+  --surface-2: rgba(15, 23, 42, 0.72);
+  --surface-border: rgba(148, 163, 184, 0.18);
+  --text-dark: #e5eefc;
+  --text-light: #94a3b8;
+  --border-light: rgba(148, 163, 184, 0.18);
+  --border-color: rgba(148, 163, 184, 0.24);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 16px 34px rgba(0, 0, 0, 0.36);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.42);
+  --gradient-1: linear-gradient(135deg, #7c3aed 0%, #d946ef 100%);
+  --gradient-2: linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%);
+  --gradient-3: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  --gradient-4: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 26%),
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.12), transparent 24%),
+    linear-gradient(180deg, #050816 0%, #0b1120 48%, #0f172a 100%);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.36);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(226, 232, 240, 0.52);
+}
